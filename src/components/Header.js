@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Button from "./Button"
-import Logo from "../logo.svg"
+import Button from "./Button";
+import Logo from "../logo.svg";
 
 function Header() {
-  const [invertoryHover, setInventoryHover] = React.useState(false)
-  let timer = null
+  const [invertoryHover, setInventoryHover] = React.useState(false);
+  let timer = null;
   return (
     <nav className="flex flex-row items-center py-4 text-white bg-blue justify-between px-8 fixed top-0 w-full">
       <div className="flex flex-row">
@@ -17,7 +17,7 @@ function Header() {
         </div>
         <ul className="lg:flex-row lg:flex hidden m-4">
           <li className="mx-6">
-            <Link to="/">Hunter's Valley</Link>
+            <Link to="/hunters_valley">Hunter's Valley</Link>
           </li>
           <li className="mx-6">
             <Link to="/market_place">MarketPlace</Link>
@@ -25,13 +25,13 @@ function Header() {
           <li
             className="mx-6 cursor-pointer"
             onMouseOver={() => {
-              clearTimeout(timer)
-              setInventoryHover(true)
+              clearTimeout(timer);
+              setInventoryHover(true);
             }}
             onMouseOut={() => {
               timer = setTimeout(() => {
-                setInventoryHover(false)
-              }, 500)
+                setInventoryHover(false);
+              }, 500);
             }}
           >
             Inventory
@@ -61,7 +61,7 @@ function Header() {
         <Button title="Connect" classes="px-4 py-2 alert-info" />
       </div>
     </nav>
-  )
+  );
 }
 
-export default Header
+export default Header;

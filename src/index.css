@@ -39,7 +39,20 @@ code {
 }
 
 .bg-blue {
-  background: rgb(11, 83, 148);
+  background: #0b5394;
+}
+
+.bg-blue-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(30, 101, 166, 1) 0%,
+    rgba(3, 65, 121, 1) 100%
+  );
+}
+
+.title-shadow {
+  text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #034179, 0 0 30px #034179,
+    0 0 40px #034179, 0 0 55px #034179, 0 0 75px #034179;
 }
 
 .color-blue {
