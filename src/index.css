@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("../src/assets/image/bg.jpg") no-repeat;
+  background: url("../src/assets/images/bg.png") no-repeat;
   background-size: cover;
 }
 
@@ -42,6 +42,19 @@ code {
   background: #0b5394;
 }
 
+.color-blue {
+  color: rgb(11, 83, 148);
+}
+
+.color-yellow {
+  color: rgb(255, 217, 102);
+}
+
+/* Landing Page */
+.landing {
+  background: url("./assets/images/landing/bg.png") center;
+  background-size: 100% auto;
+}
 .bg-blue-gradient {
   background: radial-gradient(
     circle,
@@ -55,13 +68,35 @@ code {
     0 0 40px #034179, 0 0 55px #034179, 0 0 75px #034179;
 }
 
-.color-blue {
-  color: rgb(11, 83, 148);
+.feature-item-title {
+  background: url("./assets/images/landing/feature/title.png") no-repeat center;
+  background-size: contain;
+  height: 110px;
 }
 
-.color-yellow {
-  color: rgb(255, 217, 102);
+.feature-item-content {
+  background: url("./assets/images/landing/feature/content.png") no-repeat
+    center;
+  background-size: contain;
+  height: 590px;
 }
+
+.tokenomics {
+  background: url("../src/assets/images/landing/tokenomics/tokenomics.png")
+    no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 845px;
+}
+
+.landing-home-item {
+  background: rgb(255, 255, 255, 0.5);
+}
+
+.bg-blackblue {
+  background: rgb(13, 11, 44);
+}
+/* Landing Page */
 
 footer {
   background-color: rgba(13, 90, 139, 0.8);
