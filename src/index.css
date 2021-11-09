@@ -46,6 +46,10 @@ code {
   color: rgb(11, 83, 148);
 }
 
+.color-blackblue {
+  color: #0d2632;
+}
+
 .color-yellow {
   color: rgb(255, 217, 102);
 }
@@ -95,6 +99,26 @@ code {
 
 .bg-blackblue {
   background: rgb(13, 11, 44);
+}
+
+.dev-mapcard {
+  background: url("./assets/images/landing/map/bg.png") no-repeat center;
+  background-size: contain;
+}
+
+.road-mapcard {
+  background: url("./assets/images/landing/roadmap/bg.png") no-repeat center;
+  background-size: contain;
+  /* width: 460px; */
+  height: 700px;
+}
+.presale-button {
+  background: linear-gradient(
+    180deg,
+    #060918 0%,
+    #1d2848 100%,
+    rgba(6, 29, 35, 0) 100%
+  );
 }
 /* Landing Page */
 

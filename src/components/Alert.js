@@ -1,7 +1,9 @@
-import React from "react"
+import React from "react";
 
 function Alert({ text }) {
-  return <h1 className="text-center py-4 text-white alert-info">{text}</h1>
+  return (
+    <h1 className="text-center py-4 text-white alert-info -mt-1">{text}</h1>
+  );
 }
 
-export default Alert
+export default Alert;
