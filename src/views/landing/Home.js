@@ -7,9 +7,12 @@ import Dianosor_Young from "../../assets/images/landing/dragon/young.png";
 import Dianosor_Middle from "../../assets/images/landing/dragon/middle.png";
 import Dianosor_Old from "../../assets/images/landing/dragon/old.png";
 
+const CONTRACT_ADDRESS = "0x9bfd1348cf574e3eb2b114cc18374b09ad012c69";
+
 function Home() {
   const [menuVisible, setMenuVisible] = React.useState(true);
   const [whitePaper, setWhitePapter] = React.useState(false);
+  const [clipboard, setClipBoard] = React.useState(false);
   return (
     <div
       className="flex flex-col px-20 py-4 partial-home justify-around"
@@ -85,14 +88,25 @@ function Home() {
       <div className="my-4">
         <Fade top>
           <span className="text-lg">DearMonsters(DMS) contract address:</span>
-          <div className="lg:w-1/2 w-full border-2 border-white rounded-xl bg-transparent flex flex-row justify-between">
-            <span className="p-1 ml-2">
-              0x9bfd1348cf574e3eb2b114cc18374b09ad012c69
-            </span>
-            <span className="material-icons border-l border-white p-1 cursor-pointer">
-              content_paste
-            </span>
+          <div className="flex flex-row">
+            <div className="lg:w-1/2 w-full border-2 border-white rounded-xl bg-transparent flex flex-row justify-between">
+              <span className="p-1 ml-2">{CONTRACT_ADDRESS}</span>
+              <span
+                className="material-icons border-l border-white p-1 cursor-pointer"
+                onClick={() => {
+                  navigator.clipboard.writeText(CONTRACT_ADDRESS);
+                  setClipBoard(true);
+                  setTimeout(() => {
+                    setClipBoard(false);
+                  }, 3000);
+                }}
+              >
+                content_paste
+              </span>
+            </div>
+            {clipboard && <span className="m-1">Copied!!!</span>}
           </div>
+
           <span className="text-lg">Check on BSCScan</span>
           <div className="flex flex-row my-4">
             <button className="uppercase border-2 border-white px-4 py-2 rounded-2xl presale-button ">
@@ -124,11 +138,11 @@ function Home() {
                   </li>
                 </ul>
               )}
-              <Link to="/hunters_valley">
+              {/* <Link to="/hunters_valley">
                 <span className="uppercase border-2 border-white px-5 py-2 rounded-2xl ml-5">
                   Enter App
                 </span>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </Fade>

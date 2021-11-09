@@ -10,7 +10,7 @@ import Feature_Other from "../../assets/images/landing/feature/feature-6.png";
 
 function Features() {
   return (
-    <div className="flex flex-col partial-features">
+    <div className="flex flex-col partial-features" id="features">
       <Fade top>
         <h1 className="uppercase text-7xl text-center py-9">Features</h1>
       </Fade>
@@ -20,7 +20,8 @@ function Features() {
           <Fade bottom>
             <div className="flex items-center justify-center feature-item-title mb-9">
               <span className="w-1/3 text-center">
-                Training Ground Play to Earn
+                Training Ground
+                <br /> Play to Earn
               </span>
             </div>
             <div className="feature-item-content flex flex-col items-center py-16">

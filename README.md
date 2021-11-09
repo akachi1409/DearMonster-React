@@ -4,12 +4,18 @@
 
 - Install packages
 
+```
   npm install
+```
 
-- Development
+- For Development
 
+```
   npm run dev
+```
 
-- Production
+- For Production
 
+```
   npm run start
+```
