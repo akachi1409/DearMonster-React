@@ -6,11 +6,15 @@ import Logo from "../../logo.svg";
 import Dianosor_Young from "../../assets/images/landing/dragon/young.png";
 import Dianosor_Middle from "../../assets/images/landing/dragon/middle.png";
 import Dianosor_Old from "../../assets/images/landing/dragon/old.png";
+import BookEnglish from "../../assets/pdf/English.pdf"
+import BookChinese from "../../assets/pdf/Chinese.pdf";
 
 const CONTRACT_ADDRESS = "0x9bfd1348cf574e3eb2b114cc18374b09ad012c69";
 
+
 function Home() {
   const [menuVisible, setMenuVisible] = React.useState(true);
+  const [presaleNotify, setPresaleNotify] = React.useState(false);
   const [whitePaper, setWhitePapter] = React.useState(false);
   const [clipboard, setClipBoard] = React.useState(false);
   return (
@@ -109,8 +113,9 @@ function Home() {
 
           <span className="text-lg">Check on BSCScan</span>
           <div className="flex flex-row my-4">
-            <button className="uppercase border-2 border-white px-4 py-2 rounded-2xl presale-button ">
+            <button className="uppercase border-2 border-white px-4 py-2 rounded-2xl presale-button presale-tooltip ">
               Presale
+              <span class="tooltiptext">Hold your horses! DearMonsters presale date will be announced soon. Join the discord for updates!</span>
             </button>
             <div className="relative">
               <button
@@ -128,13 +133,17 @@ function Home() {
                     className="px-4 py-1 cursor-pointer"
                     onClick={() => setWhitePapter(!whitePaper)}
                   >
+                    <a href = {BookEnglish}>
                     English
+                    </a>
                   </li>
                   <li
                     className="px-4 py-1 cursor-pointer"
                     onClick={() => setWhitePapter(!whitePaper)}
                   >
+                    <a href = {BookChinese}>
                     Chinese
+                    </a>
                   </li>
                 </ul>
               )}

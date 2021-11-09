@@ -65,8 +65,7 @@ function Features() {
             <div className="feature-item-content flex flex-col items-center py-16">
               <img src={Feature_Trading} alt="coloseum" className="w-64 h-64" />
               <p className="xl:w-2/3 lg:w-1/2 w-1/3 mt-4 px-4 text-center">
-                There will be an open marketplace for players to trade
-                commodities and their DearMonsters
+              There will be a trading post for players to trade commodities and DearMonsters
               </p>
             </div>
           </Fade>

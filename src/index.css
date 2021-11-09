@@ -120,6 +120,31 @@ code {
     rgba(6, 29, 35, 0) 100%
   );
 }
+
+.presale-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.presale-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: #1ab2ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  border-color: black;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.presale-tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 /* Landing Page */
 
 footer {
