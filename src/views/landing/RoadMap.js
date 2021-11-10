@@ -20,15 +20,15 @@ function RoadMap() {
               <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl text-lg">
                 <p className="w-4/5">
                   • Pre-Sales
-                  <br /> • Graphics for -DearMonsters
+                  <br /> • Graphics for DearMonsters
                   <br /> • UX/UI Development
                   <br /> • Official Launch
-                  <br /> • of Social Platforms
-                  <br /> • Launch of marketing
+                  <br />  of Social Platforms
+                  <br /> • Launch marketing
                   <br /> • Listing on Pancake Swap
                   <br /> • Coingecko and Coinmarketcap
                   <br /> • Launch of DearMonsters
-                  <br /> • game V1
+                  <br />  game V1
                   <br /> • DearMonsters Trading Post
                   <br /> • DearMonsters Raffle
                   <br /> • Sale of Caves
