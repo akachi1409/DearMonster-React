@@ -26,7 +26,7 @@ function RoadMap() {
                   <br />  of Social Platforms
                   <br /> • Launch marketing
                   <br /> • Listing on Pancake Swap
-                  <br /> • Coingecko and Coinmarketcap
+                  <br />  Coingecko and Coinmarketcap
                   <br /> • Launch of DearMonsters
                   <br />  game V1
                   <br /> • DearMonsters Trading Post
