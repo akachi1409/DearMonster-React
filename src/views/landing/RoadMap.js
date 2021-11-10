@@ -24,11 +24,10 @@ function RoadMap() {
                   <br /> • UX/UI Development
                   <br /> • Official Launch
                   <br />  of Social Platforms
-                  <br /> • Launch marketing
+                  <br /> • Launch Marketing
                   <br /> • Listing on Pancake Swap
                   <br />  Coingecko and Coinmarketcap
-                  <br /> • Launch of DearMonsters
-                  <br />  game V1
+                  <br /> • Launch of DearMonsters V1
                   <br /> • DearMonsters Trading Post
                   <br /> • DearMonsters Raffle
                   <br /> • Sale of Caves
