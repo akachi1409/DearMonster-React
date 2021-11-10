@@ -53,9 +53,9 @@ function RoadMap() {
                   • DearMonsters Farm
                   <br /> • More Listings at CEX
                   <br /> • Guilds Beta
-                  <br /> • Content & Affiliate Marketing
+                  <br /> • Content & Affiliate Marketing Tasks
                   <br /> • Launch of Daily/Weekly
-                  <br /> • Tasks Release of more DearMonsters
+                  <br /> • Release of more DearMonsters
                 </p>
               </div>
             </Fade>
