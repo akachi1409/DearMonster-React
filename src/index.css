@@ -109,14 +109,27 @@ code {
   background: rgb(13, 11, 44);
 }
 
-.dev-mapcard {
-  background: url("./assets/images/landing/map/bg.png") no-repeat center;
+.dev-mapcard{
+  background: url("./assets/images/landing/map/bg.png") no-repeat;
   background-size: contain;
 }
+@media only screen and (max-width: 1020px) {
+  .dev-mapcard{
+    background: url("./assets/images/landing/map/bg.png") no-repeat;
+    background-size: contain;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .dev-mapcard{
     background: url("./assets/images/landing/map/bg.png") no-repeat;
-    height: 50%;
+    background-size: 100% 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .dev-mapcard{
+    background: url("./assets/images/landing/map/bg.png") no-repeat;
+    background-size: 100% 100%;
   }
 }
 .road-mapcard {

@@ -23,13 +23,13 @@ function Development() {
             <Fade left>
               <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6">
                 <div className="lg:w-2/5 md:w sm:w">
-                  <h1 className="color-blackblue lg:text-2xl md:text-base sm:text-base font-bold">
+                  <h1 className="color-blackblue text-2xl font-bold">
                     Conceptualization of Idea for Game
                   </h1>
-                  <h1 className="color-blackblue lg:text-2xl md:text-base sm:text-base font-bold">
+                  <h1 className="color-blackblue text-2xl font-bold">
                     - Apr 2021
                   </h1>
-                  <p className="text-black lg:m-5 md:m-2 sm:m-1">
+                  <p className="text-black m-5">
                     - Brainstorming of ideas for play to earn' feature
                     <br /> -Ensuring soundness and sustainability of play to
                     earn concept
