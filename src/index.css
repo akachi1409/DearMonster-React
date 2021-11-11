@@ -92,7 +92,15 @@ code {
   width: 100%;
   height: 845px;
 }
-
+@media only screen and (max-width: 600px) {
+  .tokenomics {
+    background: url("../src/assets/images/landing/tokenomics/tokenomics.png")
+      no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 420px;
+  }
+}
 .landing-home-item {
   background: rgb(255, 255, 255, 0.5);
 }
@@ -105,7 +113,12 @@ code {
   background: url("./assets/images/landing/map/bg.png") no-repeat center;
   background-size: contain;
 }
-
+@media only screen and (max-width: 600px) {
+  .dev-mapcard{
+    background: url("./assets/images/landing/map/bg.png") no-repeat;
+    height: 50%;
+  }
+}
 .road-mapcard {
   background: url("./assets/images/landing/roadmap/bg.png") no-repeat center;
   background-size: contain;

@@ -19,7 +19,7 @@ function Home() {
   const [clipboard, setClipBoard] = React.useState(false);
   return (
     <div
-      className="flex flex-col px-20 py-4 partial-home justify-around"
+      className="flex flex-col lg:px-20 lg:py-4 lg:partial-home justify-around sm:px-5 md:px-5" 
       id="home"
     >
       <div className="flex xl:flex-row lg:flex-col flex-row justify-between items-center">

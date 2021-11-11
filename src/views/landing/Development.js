@@ -12,24 +12,24 @@ function Development() {
   return (
     <div className="flex flex-col" id="development">
       <Fade top>
-        <h1 className="uppercase text-7xl text-center py-20">
+        <h1 className="uppercase lg:text-7xl md:text-3xl sm:text-3xl text-center lg:py-20 md:py-10 sm:py-5">
           Development Map
         </h1>
       </Fade>
-      <div className="flex flex-col m-40">
+      <div className="flex flex-col lg:m-40 md:m-20 sm:m-10">
         {/* Start MapRow */}
         <div className="flex flex-row">
           <div className="flex flex-1 justify-between flex-row border-r-2 border-white">
             <Fade left>
               <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6">
-                <div className="lg: w-2/5">
-                  <h1 className="color-blackblue text-2xl font-bold">
+                <div className="lg:w-2/5 md:w sm:w">
+                  <h1 className="color-blackblue lg:text-2xl md:text-base sm:text-base font-bold">
                     Conceptualization of Idea for Game
                   </h1>
-                  <h1 className="color-blackblue text-2xl font-bold">
+                  <h1 className="color-blackblue lg:text-2xl md:text-base sm:text-base font-bold">
                     - Apr 2021
                   </h1>
-                  <p className="text-black m-5">
+                  <p className="text-black lg:m-5 md:m-2 sm:m-1">
                     - Brainstorming of ideas for play to earn' feature
                     <br /> -Ensuring soundness and sustainability of play to
                     earn concept
