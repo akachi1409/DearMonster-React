@@ -160,7 +160,7 @@ function Home() {
           </div>
         </Fade>
       </div>
-      <div className="flex flex-row justify-between my-9">
+      <div className="justify-between my-9 dianosor-layout">
         <Fade top>
           <div>
             <img src={Dianosor_Young} alt="young" />

@@ -59,10 +59,21 @@ code {
   background: url("./assets/images/landing/bg.png") center;
   background-size: 100% auto;
 }
-.logo-bg{
-  background: url("./logo.svg");
-  background-size: contain;
-  width: 234px;
+.dianosor-layout{
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (min-width: 320px) {
+  .dianosor-layout{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .dianosor-layout{
+    display: flex;
+    flex-direction: row;
+  }
 }
 .bg-blue-gradient {
   background: radial-gradient(
