@@ -12,7 +12,7 @@ function Features() {
   return (
     <div className="flex flex-col partial-features" id="features">
       <Fade top>
-        <div className="uppercase text-7xl text-center lg:py-9">Features</div>
+        <div className="uppercase lg:text-7xl md:text-3xl sm:text-3xl text-center lg:py-20 md:py-10 sm:py-5">Features</div>
       </Fade>
       <div className="flex flex-row flex-wrap">
         {/* Start Feature Card */}
