@@ -12,7 +12,7 @@ function Development() {
   return (
     <div className="flex flex-col" id="development">
       <Fade top>
-        <h1 className="uppercase lg:text-7xl md:text-3xl sm:text-3xl text-center lg:py-20 md:py-10 sm:py-5">
+        <h1 className="uppercase text-7xl text-center lg:py-20 md:py-10 sm:py-5">
           Development Map
         </h1>
       </Fade>

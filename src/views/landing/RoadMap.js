@@ -12,7 +12,7 @@ function RoadMap() {
         <h1 className="text-white text-7xl my-16">FUTURE ROADMAP</h1>
       </Slide>
       <div className="flex flex-col w-full">
-        <div className="flex flex-row">
+        <div className="flex roadmap-layout">
           {/* Start Roadmap Card */}
           <Fade left>
             <div className="flex flex-1 flex-col text-center">
@@ -38,7 +38,7 @@ function RoadMap() {
           </Fade>
           {/* End Roadmap Card */}
           {/* Start the right arrow */}
-          <div className="xl:w-72 w-48 px-3 flex items-center">
+          <div className="xl:w-72 w-48 px-3 flex items-center roadmap-arrow">
             <Fade left>
               <img src={ArrowRightForRoadMap} alt="arrow-right" />
             </Fade>
@@ -77,7 +77,7 @@ function RoadMap() {
           </div>
           {/* Start the right arrow */}
         </div>
-        <div className="flex flex-row">
+        <div className="flex roadmap-layout">
           {/* Start Roadmap Card */}
           <Fade right>
             <div className="flex flex-1 flex-col text-center">
@@ -96,7 +96,7 @@ function RoadMap() {
           </Fade>
           {/* End Roadmap Card */}
           {/* Start the right arrow */}
-          <div className="xl:w-72 lg:w-48 px-3 flex items-center">
+          <div className="xl:w-72 lg:w-48 px-3 flex items-center roadmap-arrow-inverse">
             <Fade right>
               <img src={ArrowLeftForRoadMap} alt="arrow-left" />
             </Fade>

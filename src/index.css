@@ -141,11 +141,38 @@ code {
 @media only screen and (max-width: 600px) {
   .road-mapcard {
     background: url("./assets/images/landing/roadmap/bg.png") no-repeat center;
-    background-size: 100% 100%;
-    /* width: 460px; */
-    height: 700px;
+    background-size: contain;
+    height: 400px;
+  }
+  .roadmap-arrow{
+    transform: rotate(90deg);
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  .roadmap-arrow-inverse{
+    transform: rotate(-90deg);
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
 }
+@media only screen and (max-width: 900px) {
+  .road-mapcard {
+    background: url("./assets/images/landing/roadmap/bg.png") no-repeat center;
+    background-size: contain;
+    height: 500px;
+  }
+}
+.roadmap-layout {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+  .roadmap-layout {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .presale-button {
   background: linear-gradient(
     180deg,
