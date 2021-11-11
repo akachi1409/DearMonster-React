@@ -17,8 +17,8 @@ function RoadMap() {
           <Fade left>
             <div className="flex flex-1 flex-col text-center">
               <h1 className="uppercase text-4xl mb-4">Phase 1</h1>
-              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl text-lg">
-                <p className="w-4/5">
+              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl lg:text-lg md:text-sm sm:text-xs ">
+                <p className="lg:w-4/5 md:w sm:w">
                   • Pre-Sales
                   <br /> • Graphics for DearMonsters
                   <br /> • UX/UI Development
@@ -48,7 +48,7 @@ function RoadMap() {
           <div className="flex flex-1 flex-col text-center">
             <Fade left>
               <h1 className="uppercase text-4xl mb-4">Phase 2</h1>
-              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl text-lg">
+              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl lg:text-lg md:text-sm sm:text-xs ">
                 <p className="w-2/3">
                   • DearMonsters Farm
                   <br /> • More Listings at CEX
@@ -82,7 +82,7 @@ function RoadMap() {
           <Fade right>
             <div className="flex flex-1 flex-col text-center">
               <h1 className="uppercase text-4xl mb-4">Phase 4</h1>
-              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl text-lg">
+              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl lg:text-lg md:text-sm sm:text-xs ">
                 <p className="w-2/3">
                   • Partnerships with
                   <br /> retailers for
@@ -106,7 +106,7 @@ function RoadMap() {
           <Fade right>
             <div className="flex flex-1 flex-col text-center">
               <h1 className="uppercase text-4xl mb-4">Phase 3</h1>
-              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl text-lg">
+              <div className="road-mapcard text-black flex justify-center items-center xl:text-2xl lg:text-lg md:text-sm sm:text-xs ">
                 <p className="w-2/3">
                   • Guilds Gameplay
                   <br />• Guild Wars
