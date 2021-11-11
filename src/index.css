@@ -59,6 +59,11 @@ code {
   background: url("./assets/images/landing/bg.png") center;
   background-size: 100% auto;
 }
+.logo-bg{
+  background: url("./logo.svg");
+  background-size: contain;
+  width: 234px;
+}
 .bg-blue-gradient {
   background: radial-gradient(
     circle,

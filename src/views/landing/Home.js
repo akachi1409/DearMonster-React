@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 import Logo from "../../logo.svg";
+// import Logo_mobile from "../../logo-mobile.svg"
 import Dianosor_Young from "../../assets/images/landing/dragon/young.png";
 import Dianosor_Middle from "../../assets/images/landing/dragon/middle.png";
 import Dianosor_Old from "../../assets/images/landing/dragon/old.png";
@@ -73,7 +74,7 @@ function Home() {
       </div>
       <div>
         <Fade top>
-          <h1 className="py-12 text-5xl">
+          <h1 className="py-12 lg:text-5xl md:text-3xl sm:text-3xl">
             The Universe where blockchain and dreams meet
           </h1>
           <p className="text-2xl">
@@ -94,7 +95,7 @@ function Home() {
           <span className="text-lg">DearMonsters(DMS) contract address:</span>
           <div className="flex flex-row">
             <div className="lg:w-1/2 w-full border-2 border-white rounded-xl bg-transparent flex flex-row justify-between">
-              <span className="p-1 ml-2">{CONTRACT_ADDRESS}</span>
+              <span className="lg:p-1 lg:ml-2 md:p-0 md:ml-0 sm:px-1 sm:ml-0 md:text-sm sm:text-xs sm:py-2">{CONTRACT_ADDRESS}</span>
               <span
                 className="material-icons border-l border-white p-1 cursor-pointer"
                 onClick={() => {
