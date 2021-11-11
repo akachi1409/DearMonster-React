@@ -111,7 +111,10 @@ function Home() {
             {clipboard && <span className="m-1">Copied!!!</span>}
           </div>
 
-          <span className="text-lg">Check on BSCScan</span>
+          <span className="text-lg" style={{cursor: "pointer"}} onClick={()=>{
+            var url = "https://bscscan.com/address/" + CONTRACT_ADDRESS;
+            window.location.href = url
+          }}>Check on BSCScan</span>
           <div className="flex flex-row my-4">
             <button className="uppercase border-2 border-white px-4 py-2 rounded-2xl presale-button presale-tooltip ">
               Presale
