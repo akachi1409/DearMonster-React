@@ -77,7 +77,7 @@ function Home() {
           <h1 className="py-12 lg:text-5xl md:text-3xl sm:text-3xl">
             The Universe where blockchain and dreams meet
           </h1>
-          <p className="text-2xl">
+          <p className="xl:text-2xl lg:text-2xl md:text-xl sm:text-base">
             The world of DearMonsters has existed since the advent of blockchain
             technology. Through years of exploration efforts, we have finally
             unearthed the fabled and mythical Universe of DearMonsters. Friendly
