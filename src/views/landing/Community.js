@@ -10,10 +10,10 @@ function Community() {
     <div id="community">
       <div className="flex flex-col items-center py-24">
         <Slide top>
-          <h1 className="text-white text-7xl my-8">JOIN US NOW</h1>
+          <h1 className="uppercase lg:text-7xl md:text-3xl sm:text-3xl text-center lg:py-20 md:py-10 sm:py-5">JOIN US NOW</h1>
         </Slide>
         <Slide bottom>
-          <div className="flex sm:flex-row flex-col w-full justify-center">
+          <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col w-full justify-center">
             <a href="https://twitter.com/DearMonstersBSC">
               <div className="flex flex-col items-center m-4">
                 <img src={Twitter} alt="twitter" className="w-1/2" />
