@@ -15,18 +15,24 @@ const CONTRACT_ADDRESS = "0x9bfd1348cf574e3eb2b114cc18374b09ad012c69";
 
 
 function Home() {
-  const [menuVisible, setMenuVisible] = React.useState(true);
+  
+  const [menuVisible, setMenuVisible] = React.useState(false);
   const [presaleNotify, setPresaleNotify] = React.useState(false);
   const [whitePaper, setWhitePapter] = React.useState(false);
   const [clipboard, setClipBoard] = React.useState(false);
+  window.addEventListener('resize', () => {
+    if(window.innerWidth > 640) {
+      setMenuVisible(false);
+    }
+  });
   return (
     <div
       className="flex flex-col lg:px-20 lg:py-4 lg:partial-home justify-around sm:px-5 md:px-5" 
       id="home"
     >
-      <div className="flex flex-row justify-between items-center">
+      <div className={((menuVisible ? "row-media":"") +  "flex flex-row justify-between items-center")}>
         <Fade top>
-          <ResponsiveImage>
+          <ResponsiveImage className={(menuVisible ? "float-left-media " : "")}>
             <ResponsiveImageSize
               default
               minWidth={0}
@@ -39,12 +45,13 @@ function Home() {
           </ResponsiveImage>
           {/* <img src={Logo} alt="🙌Logo" width={234} /> */}
           <span
-              className="inline md:hidden material-icons border-2 border-white p-3 m-3 rounded-md cursor-pointer" style={{float:"right"}}
+              className={"inline md:hidden material-icons border-2 border-white p-3 m-3 rounded-md cursor-pointer"} style={{float:"right"}
+            } onClick={()=>{ setMenuVisible(!menuVisible);}}
             >
               menu
             </span>
             
-          <div className="flex lg:flex-row flex-col md:relative fixed top-0 left-0 w-full z-10 md:w-3/5 sm:w-3/5" hidden id="myTopnav">
+          <div className={"flex lg:flex-row flex-col relative fixed top-0 right-0 md:relative fixed top-0 right-0 w-full z-10 sm:relative fixed flex-row " + (!menuVisible ? "right-hidden" : "right-show") +  " w-full z-10"} hidden id="myTopnav">
             <a
               href="#home"
               className="landing-home-item p-3 lg:m-3 xl:text-2xl lg:text-lg md:text-sm lg:rounded-md cursor-pointer text-center"

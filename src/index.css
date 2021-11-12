@@ -290,6 +290,19 @@ code {
     z-index: 1;
   }
 }
+@media only screen and (max-width: 640px) {
+  .right-hidden {
+    top: 20px!important;
+    display: none!important;
+  }
+
+  .row-media {
+    display: inline!important;
+  }
+  .float-left-media {
+    float: left!important;
+  }
+}
 .presale-tooltip:hover .tooltiptext {
   visibility: visible;
 }
