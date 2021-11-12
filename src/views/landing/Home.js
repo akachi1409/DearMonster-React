@@ -24,7 +24,7 @@ function Home() {
       className="flex flex-col lg:px-20 lg:py-4 lg:partial-home justify-around sm:px-5 md:px-5" 
       id="home"
     >
-      <div className="flex xl:flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center">
         <Fade top>
           <ResponsiveImage>
             <ResponsiveImageSize
@@ -38,16 +38,13 @@ function Home() {
             />
           </ResponsiveImage>
           {/* <img src={Logo} alt="🙌Logo" width={234} /> */}
-
-            <span
-              className="inline lg:hidden material-icons border-2 border-white p-3 m-3 rounded-md cursor-pointer " style={{float:"right"}}
-              onClick={() => setMenuVisible(true)}
+          <span
+              className="inline md:hidden material-icons border-2 border-white p-3 m-3 rounded-md cursor-pointer" style={{float:"right"}}
             >
               menu
             </span>
-
-           
-          <div className="flex lg:flex-row flex-col md:relative fixed top-0 left-0 w-full z-10 topnav" hidden id="myTopnav">
+            
+          <div className="flex lg:flex-row flex-col md:relative fixed top-0 left-0 w-full z-10 md:w-3/5 sm:w-3/5" hidden id="myTopnav">
             <a
               href="#home"
               className="landing-home-item p-3 lg:m-3 xl:text-2xl lg:text-lg md:text-sm lg:rounded-md cursor-pointer text-center"
@@ -83,6 +80,7 @@ function Home() {
               className="landing-home-item p-3 lg:m-3 xl:text-2xl lg:text-lg md:text-sm lg:rounded-md cursor-pointer text-center"
             >
               Community
+
             </a>
 
           </div>

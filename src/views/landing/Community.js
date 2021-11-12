@@ -43,7 +43,7 @@ function Community() {
       </div>
       {/* Start Partial Footer */}
       <div className="flex items-center justify-center h-32 bg-blackblue">
-        <h1 className="text-3xl text-center">
+        <h1 className="text-3xl md:text-2xl sm:text-xl text-center ">
           Copyright @2021. All Rights Reserved By DearMonsters
         </h1>
       </div>
