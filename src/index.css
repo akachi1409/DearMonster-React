@@ -200,6 +200,13 @@ code {
   /* width: 460px; */
   height: 700px;
 }
+
+.roadmap-arrow{
+  display: flex;
+}
+/* .roadmap-arrow-down{
+  display: flex;
+} */
 @media only screen and (max-width: 640px) {
   .road-mapcard {
     background: url("./assets/images/landing/roadmap/bg.png") no-repeat center;
@@ -207,14 +214,7 @@ code {
     height: 400px;
   }
   .roadmap-arrow{
-    transform: rotate(90deg);
-    margin-top: 5em;
-    margin-bottom: 5em;
-  }
-  .roadmap-arrow-inverse{
-    transform: rotate(-90deg);
-    margin-top: 5em;
-    margin-bottom: 5em;
+    display: none;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -228,10 +228,22 @@ code {
   display: flex;
   flex-direction: row;
 }
+.roadmap-response-flow{
+  flex-direction: row;
+}
+.roadmap-bar{
+  display: none;
+}
 @media only screen and (max-width: 640px) {
   .roadmap-layout {
     display: flex;
     flex-direction: column;
+  }
+  .roadmap-response-flow{
+    flex-direction: column-reverse;
+  }
+  .roadmap-bar{
+    display: flex;
   }
 }
 
