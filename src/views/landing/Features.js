@@ -19,7 +19,7 @@ function Features() {
         <div className="flex-col xl:w-1/3 lg:w-1/2 md:w-1/2 w-full p-8">
           <Fade bottom>
             <div className="flex items-center justify-center feature-item-title mb-9">
-              <span className="w-1/3 text-center">
+              <span className="w-1/3 sm:w-1/2 text-center">
                 Training Ground
                 <br /> Play to Earn
               </span>
