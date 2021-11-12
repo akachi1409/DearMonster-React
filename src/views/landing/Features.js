@@ -98,10 +98,9 @@ function Features() {
             <div className="feature-item-content flex flex-col items-center lg:py-16 sm:py-4 md:py-8">
               <img src={Feature_Raffle} alt="coloseum" className="lg:w-64 lg:h-64 sm:w-56 sm:lg-56" />
               <p className="xl:w-2/3 lg:w-1/2 md:w-3/5 sm:w-4/6 xl:mt-4 lg:mt-1 px-4 text-center md:pt-1 sm:pt-1 sm:text-sm sm:px-1">
-                To create more interaction within the community, we will be
-                releasing this raffle feature. Players can participate in the
-                weekly raffle for free to stand a chance to win DearMonsters.
-                Winners will get to have a rare monster and other collectibles
+              To create more interaction within the community, we will be releasing this raffle feature. 
+              Players can participate in the weekly raffle for free to stand a chance to win DearMonsters.  
+              Winners will get to have a rare Dearmonster and other collectibles
               </p>
             </div>
           </Fade>

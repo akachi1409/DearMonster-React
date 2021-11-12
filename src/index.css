@@ -278,7 +278,7 @@ code {
 @media only screen and (max-width: 640px) {
   .presale-tooltip .tooltiptext {
     visibility: hidden;
-    width: 300px;
+    width: 250px;
     background-color: #1ab2ff;
     color: #fff;
     text-align: center;
