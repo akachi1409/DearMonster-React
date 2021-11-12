@@ -308,8 +308,10 @@ code {
     }
 /* Landing Page */
 
+/******************************/
 /* Presale Page */
 
+/* Title */
 .presale {
   background: url("./assets/images/landing/bg.png") center;
   background-size: 100% auto;
@@ -323,6 +325,24 @@ code {
   background: url("./assets/images/presale/title/wallet-stone.png") center no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+/* Timer */
+.presale-comment{
+  background: url("./assets/images/presale/timer/presale-stone.png") center no-repeat;
+  background-size: contain;
+  flex:6;
+}
+@media only screen and (max-width: 640px) {
+  .presale-comment{
+    background: url("./assets/images/presale/timer/presale-stone-mobile.png") center  no-repeat;
+    background-size: 90% 100%;
+    flex:6;
+  }
+}
+.presale-count{
+  background: url("./assets/images/presale/timer/count-stone.png") center no-repeat;
+  background-size: contain;
+  flex: 4;
 }
 /* Presale Page */
 footer {
