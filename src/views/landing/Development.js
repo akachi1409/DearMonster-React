@@ -21,15 +21,15 @@ function Development() {
         <div className="flex">
           <div className="flex flex-1 justify-between  development-responsive-flow">
             <Fade left>
-              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6">
-                <div className="lg:w-2/5">
-                  <h1 className="color-blackblue text-2xl font-bold">
+              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6 my-2 lg:my-3 md:my-3 sm:my-4">
+                <div className="lg:w-3/5">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:p-4 md:p-5 sm:p-10 font-bold text-center">
                     Conceptualization of Idea for Game
                   </h1>
-                  <h1 className="color-blackblue text-2xl font-bold">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:px-4 md:px-3 sm:px-2  font-bold text-center">
                     - Apr 2021
                   </h1>
-                  <p className="text-black m-5">
+                  <p className="text-black m-5 md:p-5 sm:p-7">
                     - Brainstorming of ideas for play to earn' feature
                     <br /> -Ensuring soundness and sustainability of play to
                     earn concept
@@ -49,7 +49,7 @@ function Development() {
           </div>
           <div className="flex-1 justify-center items-center invisible-mobile">
             <Fade right>
-              <img src={MonsterOne} alt="monster_one" width="60%" />
+              <img src={MonsterOne} alt="monster_one" width="60%" className="auto-margin"/>
             </Fade>
           </div>
         </div>
@@ -71,15 +71,15 @@ function Development() {
                   height="40"
                 />
               </div>
-              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6">
-                <div className="lg:w-2/5">
-                  <h1 className="color-blackblue text-2xl font-bold">
+              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6 my-2 lg:my-3 md:my-3 sm:my-4">
+                <div className="lg:w-3/5">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:p-4 md:p-5 sm:p-10 font-bold text-center">
                     Development Begins
                   </h1>
-                  <h1 className="color-blackblue text-2xl font-bold">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:px-4 md:px-3 sm:px-2  font-bold text-center">
                     - Jun 2021
                   </h1>
-                  <p className="text-black m-5">
+                  <p className="text-black m-5 md:p-5 sm:p-7">
                     - Gathering of team
                     <br /> - Generation of content
                   </p>
@@ -93,15 +93,15 @@ function Development() {
         <div className="flex flex-row">
           <div className="flex flex-1 justify-between development-responsive-flow">
             <Fade left>
-              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6">
-                <div className="lg:w-2/5">
-                  <h1 className="color-blackblue text-2xl font-bold">
+              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6 my-2 lg:my-3 md:my-3 sm:my-4">
+                <div className="lg:w-3/5">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:p-4 md:p-5 sm:p-10 font-bold text-center">
                     Creation of Token
                   </h1>
-                  <h1 className="color-blackblue text-2xl font-bold">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:px-4 md:px-3 sm:px-2  font-bold text-center">
                     - Nov 2021
                   </h1>
-                  <p className="text-black m-5">
+                  <p className="text-black m-5 md:p-5 sm:p-7">
                     - Presale 1<br /> - Marketing of game
                     <br /> - Listing on PancakeSwap and CoinGekco
                     <br /> - Launching of social platforms
@@ -147,15 +147,15 @@ function Development() {
                   className="align-middle"
                 />
               </div>
-              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6">
-                <div className="lg:w-2/5">
-                  <h1 className="color-blackblue text-2xl font-bold">
+              <div className="flex flex-1 flex-col justify-center items-center dev-mapcard px-6 my-2 lg:my-3 md:my-3 sm:my-4">
+                <div className="xl:w-2/5 lg:w-3/5 md:2-3/5 ">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:p-4 md:p-5 sm:p-10 font-bold text-center">
                     Launch of Website Initial Version
                   </h1>
-                  <h1 className="color-blackblue text-2xl font-bold">
+                  <h1 className="color-blackblue text-2xl lg:text-xl md:text-lg sm:text-base lg:px-4 md:px-3 sm:px-2  font-bold text-center">
                     - Dec 2021
                   </h1>
-                  <p className="text-black m-5">
+                  <p className="text-black m-5 md:p-5 sm:p-7">
                     - Marketing
                     <br /> - Partnerships with CEX
                     <br /> - DearMonsters V1 game play launch

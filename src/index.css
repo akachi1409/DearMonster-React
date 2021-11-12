@@ -54,6 +54,9 @@ code {
   color: rgb(255, 217, 102);
 }
 
+.auto-margin{
+  margin: 0 auto;
+}
 /* Landing Page */
 .landing {
   background: url("./assets/images/landing/bg.png") center;
@@ -146,19 +149,19 @@ code {
 }
 .dev-mapcard{
   background: url("./assets/images/landing/map/bg.png") no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 @media only screen and (max-width: 1024px) {
   .dev-mapcard{
     background: url("./assets/images/landing/map/bg.png") no-repeat;
-    background-size: contain;
+    background-size:  100% 100%;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .dev-mapcard{
     background: url("./assets/images/landing/map/bg.png") no-repeat;
-    background-size: contain;
+    background-size:  100% 100%;
   }
 }
 .development-responsive-flow{
