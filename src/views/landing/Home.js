@@ -3,12 +3,13 @@ import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 import Logo from "../../logo.svg";
-// import Logo_mobile from "../../logo-mobile.svg"
+import Logo_mobile from "../../logo-mobile.svg"
 import Dianosor_Young from "../../assets/images/landing/dragon/young.png";
 import Dianosor_Middle from "../../assets/images/landing/dragon/middle.png";
 import Dianosor_Old from "../../assets/images/landing/dragon/old.png";
 import BookEnglish from "../../assets/pdf/English.pdf"
 import BookChinese from "../../assets/pdf/Chinese.pdf";
+import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 
 const CONTRACT_ADDRESS = "0x9bfd1348cf574e3eb2b114cc18374b09ad012c69";
 
@@ -23,16 +24,30 @@ function Home() {
       className="flex flex-col lg:px-20 lg:py-4 lg:partial-home justify-around sm:px-5 md:px-5" 
       id="home"
     >
-      <div className="flex xl:flex-row lg:flex-col flex-row justify-between items-center">
+      <div className="flex xl:flex-row justify-between items-center">
         <Fade top>
-          <img src={Logo} alt="🙌Logo" width={234} />
-          <span
-            className="inline md:hidden material-icons border-2 border-white p-3 m-3 rounded-md cursor-pointer"
-            onClick={() => setMenuVisible(true)}
-          >
-            menu
-          </span>
-          <div className="flex lg:flex-row flex-col md:relative fixed top-0 left-0 w-full z-10">
+          <ResponsiveImage>
+            <ResponsiveImageSize
+              default
+              minWidth={0}
+              path={Logo_mobile}
+            />
+            <ResponsiveImageSize
+              minWidth={640}
+              path={Logo}
+            />
+          </ResponsiveImage>
+          {/* <img src={Logo} alt="🙌Logo" width={234} /> */}
+
+            <span
+              className="inline lg:hidden material-icons border-2 border-white p-3 m-3 rounded-md cursor-pointer " style={{float:"right"}}
+              onClick={() => setMenuVisible(true)}
+            >
+              menu
+            </span>
+
+           
+          <div className="flex lg:flex-row flex-col md:relative fixed top-0 left-0 w-full z-10 topnav" hidden id="myTopnav">
             <a
               href="#home"
               className="landing-home-item p-3 lg:m-3 xl:text-2xl lg:text-lg md:text-sm lg:rounded-md cursor-pointer text-center"
@@ -69,6 +84,7 @@ function Home() {
             >
               Community
             </a>
+
           </div>
         </Fade>
       </div>
@@ -119,7 +135,7 @@ function Home() {
           <div className="flex flex-row my-4">
             <button className="uppercase border-2 border-white px-4 py-2 rounded-2xl presale-button presale-tooltip ">
               Presale
-              <span class="tooltiptext">Hold your horses! DearMonsters presale date will be announced soon. Join the discord for updates!</span>
+              <span className="tooltiptext">Hold your horses! DearMonsters presale date will be announced soon. Join the discord for updates!</span>
             </button>
             <div className="relative">
               <button
