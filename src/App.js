@@ -10,6 +10,7 @@ import TrainingGround from "./views/TrainingGround";
 import MyDearMonsters from "./views/MyDearMonsters";
 import MyItems from "./views/MyItems";
 import More from "./views/More";
+import Presale from "./views/Presale";
 
 const LoadingDiv = () => <div className="bg-blue w-full h-screen"></div>;
 
@@ -38,6 +39,9 @@ function App() {
           </Route>
           <Route path="/more">
             <More />
+          </Route>
+          <Route path="/presale">
+            <Presale/>
           </Route>
         </Switch>
       </Router>
