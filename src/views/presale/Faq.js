@@ -93,20 +93,20 @@ class Faq extends React.Component {
                     this.state.faqs &&
                     this.state.faqs.map((item,index)=>{
                         return(
-                            <div className="flex flex-col justify-center">
+                            <div className="flex flex-col justify-center" key={index}>
                                 <div className="flex justify-center faq-question py-2 my-1">
                                     <span className="w-1/3 md:w-1/2 sm:w-2/3 text-left text-lg md:text-base sm:text-sm">{item.question}</span>
                                     {item.open?
-                                        <snap onClick={() => { this.alterOpen( item.id) }}>&#x271A;</snap>
-                                        :<snap onClick={() => { this.alterOpen( item.id) }}>&#x268A;</snap>
+                                        <span onClick={() => { this.alterOpen( item.id) }}>&#x271A;</span>
+                                        :<span onClick={() => { this.alterOpen( item.id) }}>&#x268A;</span>
                                     } 
                                 </div>
                                 {item.open &&
                                 <div className="flex justify-center">
-                                    <p className="w-1/3 md:w-1/2 sm:w-2/3 xl:text-lg lg:text-base md:text-sm sm:text-sm py-1 px-1">
+                                    <p className="w-1/3 md:w-1/2 sm:w-2/3 xl:text-3lg lg:text-2lg md:text-base sm:text-base py-1 px-1">
                                         {item.anwsers.map((answer, index)=>{
                                             return(
-                                                <div>{answer}</div>
+                                                <p key={index}>{answer}</p>
                                             )
                                         })}
                                     </p>

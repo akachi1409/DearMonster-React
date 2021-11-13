@@ -50,6 +50,21 @@ function Timer(){
                         </div>
                     </div>
                 </div>
+                <div className="flex flex-col justify-center">
+                    <div className="presale-paper xl:w-3/5 lg:w-3/5 md:w-1/2 sm:w-1/2">
+                        <h1 className="uppercase lg:text-4xl md:text-2xl sm:text-xl text-center xl:pt-30 lg:pt-20 md:pt-40 sm:pt-52 presale-title text-black">tokens bought</h1>
+                        <div className="presale-progress">
+                            <div className="presale-progress-bar">
+                            </div>
+                            <p className="float-right text-black mt-2">50,000,000DMS</p>
+                            <div className="presale-buy float-left mt-10 mb-20 xl:p-10 lg:p-8 p-10 xl:text-3lg lg:text-2lg">
+                                Buy now
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </div>
         </div>
     )

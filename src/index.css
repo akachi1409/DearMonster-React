@@ -344,7 +344,42 @@ code {
   background-size: contain;
   flex: 4;
 }
+.presale-paper{
+  background: url("./assets/images/presale/timer/paper.png") center no-repeat;
+  background-size: 100% 100%;
+  margin:auto;
+}
+@media only screen and (max-width: 640px) {
+  .presale-paper{
+    background: url("./assets/images/presale/timer/paper-mobile.png") center no-repeat;
+    background-size: 100% 100%;
+    margin:auto;
+  }
+}
+.presale-progress {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 50%;
+  background-color: white;
+  border-radius: 30px;
+  height: 30px;
+}
 
+.presale-progress .presale-progress-bar {
+  height: 100%;
+  width: 70%;
+  background-color: red;
+  border-radius: 30px;
+}
+
+.presale-buy{
+  background:url("./assets/images/presale/timer/buy.png") center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
 /************* FAQ ***/
 .faq-question{
   background: url("./assets/images/presale/faq/faq-stone.png") center no-repeat;
