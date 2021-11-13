@@ -344,6 +344,18 @@ code {
   background-size: contain;
   flex: 4;
 }
+
+/************* FAQ ***/
+.faq-question{
+  background: url("./assets/images/presale/faq/faq-stone.png") center no-repeat;
+  background-size: 60% 100%;
+}
+@media only screen and (max-width: 640px) {
+  .faq-question{
+    background: url("./assets/images/presale/faq/faq-stone.png") center no-repeat;
+    background-size: 80% 100%;
+  }
+}
 /* Presale Page */
 footer {
   background-color: rgba(13, 90, 139, 0.8);
