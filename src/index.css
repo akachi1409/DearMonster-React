@@ -335,7 +335,7 @@ code {
 @media only screen and (max-width: 640px) {
   .presale-comment{
     background: url("./assets/images/presale/timer/presale-stone-mobile.png") center  no-repeat;
-    background-size: 90% 100%;
+    background-size: 85% 100%;
     flex:6;
   }
 }

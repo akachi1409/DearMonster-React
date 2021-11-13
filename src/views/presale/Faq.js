@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Fade } from "react-reveal";
 
 class Faq extends React.Component {
     constructor(props){
@@ -88,31 +89,36 @@ class Faq extends React.Component {
     render() {
         return(
         <div  className="flex flex-col" id="presale-faq">
+            <Fade top>
+                <div className="uppercase lg:text-7xl md:text-3xl sm:text-3xl lg:py-20 md:py-10 sm:py-5 text-center">faq</div>
+            </Fade>
             <div className="flex flex-col w-full justify-center">
                 {
                     this.state.faqs &&
                     this.state.faqs.map((item,index)=>{
                         return(
-                            <div className="flex flex-col justify-center" key={index}>
-                                <div className="flex justify-center faq-question py-2 my-1">
-                                    <span className="w-1/3 md:w-1/2 sm:w-2/3 text-left text-lg md:text-base sm:text-sm">{item.question}</span>
-                                    {item.open?
-                                        <span onClick={() => { this.alterOpen( item.id) }}>&#x271A;</span>
-                                        :<span onClick={() => { this.alterOpen( item.id) }}>&#x268A;</span>
-                                    } 
+                            <Fade left>
+                                <div className="flex flex-col justify-center my-3" key={index}>
+                                    <div className="flex justify-center faq-question py-2 my-1">
+                                        <span className="w-1/3 md:w-1/2 sm:w-2/3 text-left xl:text-3lg lg:text-2lg xl:p-3 text-lg md:text-base sm:text-sm">{item.question}</span>
+                                        {item.open?
+                                            <span onClick={() => { this.alterOpen( item.id) }}>&#x268A;</span>
+                                            :<span onClick={() => { this.alterOpen( item.id) }}>&#x271A;</span>
+                                        } 
+                                    </div>
+                                    {item.open &&
+                                    <div className="flex justify-center">
+                                        <p className="w-1/3 md:w-1/2 sm:w-2/3 py-1 px-1">
+                                            {item.anwsers.map((answer, index)=>{
+                                                return(
+                                                    <p className="xl:text-3lg lg:text-2lg md:text-base sm:text-base" key={index}>{answer}</p>
+                                                )
+                                            })}
+                                        </p>
+                                    </div>
+                                    }
                                 </div>
-                                {item.open &&
-                                <div className="flex justify-center">
-                                    <p className="w-1/3 md:w-1/2 sm:w-2/3 xl:text-3lg lg:text-2lg md:text-base sm:text-base py-1 px-1">
-                                        {item.anwsers.map((answer, index)=>{
-                                            return(
-                                                <p key={index}>{answer}</p>
-                                            )
-                                        })}
-                                    </p>
-                                </div>
-                                }
-                            </div>
+                            </Fade>
                         )
                     })
                 }
