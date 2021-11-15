@@ -63,7 +63,7 @@ class Faq extends React.Component {
                     id:8,
                     open:false,
                     question:"Where will DMS be launched and where can I see the trading information?",
-                    anwsers:["We will be launching DMS shortly after presale in Pancake Swap, Coin Gecko, CoinMarketCap and Poocoin. More listing will be made as we progress."]
+                    anwsers:["We will be launching DMS shortly after presale in Pancake Swap, Coin Gecko, CoinMarketCap and Poocoin. More listings will be made as we progress."]
                 },
                 {
                     id:9,
@@ -111,7 +111,7 @@ class Faq extends React.Component {
                                         <p className="w-1/3 md:w-1/2 sm:w-2/3 py-1 px-1">
                                             {item.anwsers.map((answer, index)=>{
                                                 return(
-                                                    <p className="xl:text-3lg lg:text-2lg md:text-base sm:text-base" key={index}>{answer}</p>
+                                                    <p className="xl:text-lg lg:text-lg md:text-base sm:text-base" key={index}>{answer}</p>
                                                 )
                                             })}
                                         </p>

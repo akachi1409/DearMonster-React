@@ -376,7 +376,7 @@ code {
 
 .presale-progress .presale-progress-bar {
   height: 100%;
-  width: 70%;
+  width: 0%;
   background-color: red;
   border-radius: 30px;
 }
