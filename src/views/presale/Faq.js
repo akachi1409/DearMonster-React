@@ -100,10 +100,10 @@ class Faq extends React.Component {
                             <Fade left>
                                 <div className="flex flex-col justify-center my-3" key={index}>
                                     <div className="flex justify-center faq-question py-2 my-1">
-                                        <span className="w-1/3 md:w-1/2 sm:w-2/3 text-left xl:text-3lg lg:text-2lg xl:p-3 text-lg md:text-base sm:text-sm">{item.question}</span>
+                                        <span className="w-1/3 md:w-1/2 sm:w-2/3 text-left xl:text-3lg lg:text-2lg xl:p-3 text-lg md:text-base sm:text-sm ">{item.question}</span>
                                         {item.open?
-                                            <span onClick={() => { this.alterOpen( item.id) }}>&#x268A;</span>
-                                            :<span onClick={() => { this.alterOpen( item.id) }}>&#x271A;</span>
+                                            <span className= "hand-cursor" onClick={() => { this.alterOpen( item.id) }}>&#x268A;</span>
+                                            :<span className= "hand-cursor" onClick={() => { this.alterOpen( item.id) }}>&#x271A;</span>
                                         } 
                                     </div>
                                     {item.open &&

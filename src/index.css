@@ -332,11 +332,17 @@ code {
   background-size: contain;
   flex:6;
 }
+.presale-timer{
+  flex: 6;
+}
 @media only screen and (max-width: 640px) {
   .presale-comment{
     background: url("./assets/images/presale/timer/presale-stone-mobile.png") center  no-repeat;
     background-size: 85% 100%;
     flex:6;
+  }
+  .presale-timer{
+    flex: 6;
   }
 }
 .presale-count{
@@ -390,6 +396,9 @@ code {
     background: url("./assets/images/presale/faq/faq-stone.png") center no-repeat;
     background-size: 80% 100%;
   }
+}
+.hand-cursor{
+  cursor: pointer;
 }
 /* Presale Page */
 footer {
